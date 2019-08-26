@@ -17,6 +17,7 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true,
+    includeLevel: 2,
     // 换行
     extendMarkdown: md => {
       md.set({ breaks: true });
@@ -26,11 +27,15 @@ module.exports = {
   themeConfig: {
     //显示所有页面的标题链接
     // displayAllHeaders: true,
-    sidebarDepth: 3,
+    sidebarDepth: 2,
     nav: [
       {
         text: "目录",
         items: [
+          {
+            text: "首页",
+            link: "/"
+          },
           {
             text: "数据结构",
             link: "/Data-Structure/"
@@ -39,9 +44,8 @@ module.exports = {
       }
     ],
     sidebar: {
-      sidebarDepth: 3,
-      "/Data-Structure/": ["", "二进制", "二分法", "牛顿迭代法"],
-      "/": [""]
+      "/Data-Structure/": ["/","", "二进制", "二分法", "牛顿迭代法"],
+      "/": ["","/Data-Structure/"],
     }
   }
 };
