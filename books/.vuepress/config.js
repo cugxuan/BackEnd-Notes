@@ -7,7 +7,7 @@ module.exports = {
     "@vssue/vuepress-plugin-vssue": {
       // 设置 `platform` 而不是 `api`
       platform: "github",
-      
+
       // 其他的 Vssue 配置
       owner: "cugxuan",
       repo: "BackEnd-Notes",
@@ -41,11 +41,42 @@ module.exports = {
             link: "/Data-Structure/"
           }
         ]
+      },
+      {
+        text: "Github",
+        link: "https://github.com/cugxuan/BackEnd-Notes"
       }
     ],
-    sidebar: {
-      "/Data-Structure/": ["/","", "二进制", "二分法", "牛顿迭代法"],
-      "/": ["","/Data-Structure/"],
-    }
+    sidebar: [
+      {
+        title: '首页',   // 分组标题
+        // path: '/',      // 如果你想让他能点击，就取消注释
+        collapsable: false, // 是否折叠起来
+        sidebarDepth: 2,    // 嵌套层级 默认值是 1
+        children: [
+          '/'
+        ]
+      },
+      {
+        title: '数据结构',   // 分组标题
+        path: '/data-Structure/', 
+        collapsable: false, // 是否折叠起来
+        sidebarDepth: 2,    // 嵌套层级 默认值是 1
+        children: [
+          "data-Structure/二进制",
+          "data-Structure/二分法",
+          "data-Structure/牛顿迭代法"
+        ]
+      },
+      {
+        title: '剑指 offer',
+        path: '/jz-offer',
+        collapsable: false, // 是否折叠起来
+        sidebarDepth: 2,    // 嵌套层级 默认值是 1
+        children: [
+          "jz-offer/1-二维数组中的查找"
+        ]
+      }
+    ]
   }
 };
