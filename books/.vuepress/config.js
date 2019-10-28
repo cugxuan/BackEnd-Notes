@@ -60,21 +60,22 @@ module.exports = {
       {
         title: '数据结构',   // 分组标题
         path: '/data-Structure/', 
-        collapsable: false, // 是否折叠起来
+        collapsable: true, // 是否折叠起来
         sidebarDepth: 2,    // 嵌套层级 默认值是 1
         children: [
-          "data-Structure/二进制",
-          "data-Structure/二分法",
-          "data-Structure/牛顿迭代法"
+          "data-structure/二进制",
+          "data-structure/二分法",
+          "data-structure/牛顿迭代法"
         ]
       },
       {
         title: '剑指 offer',
         path: '/jz-offer',
-        collapsable: false, // 是否折叠起来
+        collapsable: true, // 是否折叠起来
         sidebarDepth: 2,    // 嵌套层级 默认值是 1
         children: [
-          "jz-offer/1-二维数组中的查找"
+          "jz-offer/1-二维数组中的查找",
+          "jz-offer/2-替换空格",
         ]
       }
     ]
