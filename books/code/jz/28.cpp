@@ -53,7 +53,7 @@ public:
         }
         // 判断 result 是否超过一半
         times = 0;
-        for (int i = 0; i < length; i++) {
+        for (int i = 1; i < length; i++) {
             if (numbers[i] == result)
                 times++;
         }

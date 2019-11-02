@@ -2,3 +2,4 @@
 node_modules
 books/.vuepress/dist
 books/.vuepress/.deploy_git
+tmp/
