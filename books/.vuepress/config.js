@@ -20,7 +20,7 @@ module.exports = {
     includeLevel: 2,
     // 换行
     extendMarkdown: md => {
-      md.set({ breaks: true });
+      md.set({breaks: true, linkify: true});
       md.use(require("markdown-it"));
     }
   },
@@ -59,7 +59,7 @@ module.exports = {
       },
       {
         title: '数据结构',   // 分组标题
-        path: '/data-Structure/', 
+        path: '/data-Structure/',
         collapsable: true, // 是否折叠起来
         sidebarDepth: 2,    // 嵌套层级 默认值是 1
         children: [

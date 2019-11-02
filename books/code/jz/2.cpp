@@ -5,15 +5,20 @@ using namespace std;
 class Solution {
 public:
     void replaceSpace(char *str, int length) {
-        int i = 0, n = 0; //n为空格的数量
-        while (i < length) {
+        int i = 0, spaceNum = 0; //spaceNum为空格的数量
+        int strl = strlen(str); // 字符串的长度
+        while (i < strl) {
             if (str[i++] == ' ')
-                n++;
+                spaceNum++;
         }
 
-        int Newlength = length + n * 2;  //n*3-n
-        int j = length - 1;
-        str[Newlength] = 0;
+        // 计算需要的空间，如果超出空间则返回
+        int Newlength = strl + spaceNum * 2;  //n*3-n
+        if (Newlength > length) {
+            return;
+        }
+        int j = strl - 1;
+        str[Newlength] = '\0';
         for (i = Newlength - 1; i >= 0; i--, j--) {
             //i标记新的位置,j标记旧的位置
             if (str[j] == ' ') {
