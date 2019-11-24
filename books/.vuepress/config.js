@@ -76,6 +76,7 @@ module.exports = {
         children: [
           "jz-offer/1-二维数组中的查找",
           "jz-offer/2-替换空格",
+          "jz-offer/3-从尾到头打印链表",
           "jz-offer/28-数组中出现次数超过一半的数字",
         ]
       }
