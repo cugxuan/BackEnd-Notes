@@ -109,11 +109,11 @@ int main() {
 
 使用模板是为了**泛化**，可以适配不同的类型，但在编程的过程中我们很可能需要对某个类型有一些特别的方法可以让实现让效率更高，于是有了**特化**，简单来说就是**对于特定类型，使用特定的实现方法**，也有点类似重载
 
-<img align="center" src="./img1/specialization.png" width="100%" />
+![specialization](./img1/specialization.png)
 
 下面代码是标准库中散列表使用的特化例子
 
-<img align="center" src="./img1/hash-specialization.png" width="100%" />
+![hash-specialization](./img1/hash-specialization.png)
 
 # Partail Specialization，偏特化
 
@@ -129,7 +129,7 @@ int main() {
 
 VC6 所附的标准库，其 allocator 实现如下（<xmemory>），VC6 的 allocator 没有任何特殊的设计
 
-<img align="center" src="./img1/vc-" width="100%" />
+![vc-allocator](./img1/vc-allocator.png)
 
 ```C++
 // allocator<int>() 就是创建一个 allocator<int> 临时变量
@@ -164,4 +164,4 @@ VC，BC 和 GNUC 的 `allocator` 实现方式都是一样，效率不太理想�
 
 到了 GNUC 4.9，又将默认的 allocator 改成了原来的效率不高的实现方式，但是高效的方式以 extention allocators 的方式保留下来了，注意要使用 `_gnu_cxx` 的命名空间
 
-<img align="center" src="./img1/ex-allocator.png" width="100%" />
+![ex-allocator](./img1/ex-allocator.png)

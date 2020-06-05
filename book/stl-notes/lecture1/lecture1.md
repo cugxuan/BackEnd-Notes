@@ -31,6 +31,7 @@ sort 是标准库中的函数，在进行排序的时候，使用 `sort(c.begin(
 
 分段有序的 buffer，但是 deque 让使用者感觉是连续的，大致的底层结构如图
 
+![deque-struct](./img/deque-struct.png)
 <img align="center" src="./img/deque-struct.png" width="100%" />
 
 # unordered_multiset
@@ -68,7 +69,7 @@ namespace jj08 {
 }
 ```
 
-<img align="center" src="./img/unordered_multiset-example.png" width="100%" />
+![unordered_multiset-example](./img/unordered_multiset-example.png)
 
 # 分配器 allocator
 
