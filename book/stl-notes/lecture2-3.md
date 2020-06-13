@@ -37,6 +37,6 @@ deque 是分段连续的，迭代器中有四个元素
 - last，指向当前 buffer 的终点
 - node，指向当前 buffer 在 map 中对应的节点
 
-![deque](./img3/deque.png)
+![deque](./img/lecture2-3/deque.png)
 
 deque 的 iterator 的 iterator_category 是 random_access_iterator_tag，可以随机存取的指针，就是可以跳跃使用，给使用者连续的“假象”，实现方式显而易见，对 iterator 的操作进行重载

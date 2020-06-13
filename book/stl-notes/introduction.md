@@ -31,7 +31,7 @@ STL 六大部件（Components）
 - 适配器（Adapters）
 - 仿函数（Functors）
 
-![stl 组件](./img/stl-components.png)
+![stl 组件](./img/introduction/stl-components.png)
 
 程序的功能是输出数组中，大于等于 40 的数。
 一般来说都会有默认分配器 allocator，可以不用自己写，分配器也是一个模板，需要告诉他分配的类型即可。

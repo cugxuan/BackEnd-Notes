@@ -2,7 +2,7 @@
 
 在容器之间使用的并不是继承（inheritance）的关系，而是组合（讲义上叫复合，composition）
 
-![containers](./img2/containers.png)
+![containers](./img/lecture2-2/containers.png)
 
 # 容器 list
 
@@ -87,7 +87,7 @@ struct __list_iterator {
 
 # Traits 特性，特征，特质
 
-![iterator-traits](./img2/iterator-traits.png)
+![iterator-traits](./img/lecture2-2/iterator-traits.png)
 
 Iterator Traits 用来分辨 class iterators 和 non-class iterators。在算法使用的时候可能没有对应的 5 中 type，所以使用中间层 Traits 来转化，下面是完整的 iterator_traits
 
